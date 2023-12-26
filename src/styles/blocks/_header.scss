@@ -1,0 +1,49 @@
+.header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.4rem;
+  background-color: $primaryLightColor;
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
+}
+
+.header__item{
+  @extend %flex-c-sb;
+}
+
+.header__info{
+  @extend %flex-c-end;
+}
+
+.header__info-conditions{
+  @extend %flex-end-end-column;
+  padding-right: 1.2rem;
+  border-right: 1px solid $primaryPurpleColor;
+
+  p{
+    line-height: 1.5em;
+  }
+}
+
+.header__info-calls{
+  @extend %flex-start-start-column;
+  padding-left: 1.3rem;
+}
+
+.header__info-number{
+  font-size: 3.6rem;
+  font-weight: 900;
+  line-height: 4rem;
+}
+
+.header__info-calls-free{
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  font-weight: 300;
+}
+
+.header__nav{
+  @extend %flex-c-start;
+  gap: 2.4rem;
+}

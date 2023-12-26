@@ -1,0 +1,58 @@
+.title {
+  color: $primaryDarkColor;
+  font-size: 30rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1.2em;
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: .4rem;
+  font-size: 2.4rem;
+  font-weight: 900;
+}
+
+.logo__image {
+  width: 5rem;
+  height: 7.4rem;
+}
+
+.link {
+  font-size: 1.6rem;
+  line-height: 1.5em;
+  font-weight: 700;
+  color: $primaryDarkColor;
+  transition: .3s color;
+
+  &:hover,
+  &:focus {
+    color: $primaryPurpleColor;
+  }
+
+  &:active {
+    color: $secondPurpleColor;
+  }
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 2.8em;
+  color: $primaryLightColor;
+  background-color: $primaryPurpleColor;
+
+  &:hover,
+  &:focus {
+    background-color: $secondPurpleColor;
+  }
+}
+
+.container {
+  padding-left: 10%;
+  padding-right: 10%;
+}
