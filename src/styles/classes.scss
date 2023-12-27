@@ -1,3 +1,9 @@
+.page{
+  min-height: 100vh;
+  width: 100%;
+  @extend %flex-c-sb-column;
+}
+
 .title {
   color: $primaryDarkColor;
   font-size: 30rem;
@@ -14,6 +20,10 @@
   gap: .4rem;
   font-size: 2.4rem;
   font-weight: 900;
+
+  &_light{
+    color: $primaryLightColor;
+  }
 }
 
 .logo__image {
@@ -27,6 +37,10 @@
   font-weight: 700;
   color: $primaryDarkColor;
   transition: .3s color;
+
+  &_light{
+    color: $primaryLightColor;
+  }
 
   &:hover,
   &:focus {
@@ -55,4 +69,32 @@
 .container {
   padding-left: 10%;
   padding-right: 10%;
+}
+
+.contacts {
+  @extend %flex-end-end-column;
+  padding-left: 1.3rem;
+
+  &__free {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    font-weight: 300;
+  }
+
+  &__number {
+    font-size: 3.6rem;
+    font-weight: 900;
+    line-height: 4rem;
+  }
+
+  &_light{
+    @extend %flex-end-end-column;
+    .contacts__number{
+      color: $primaryLightColor;
+    }
+
+    .contacts__free{
+      color: $primaryLightColor;
+    }
+  }
 }

@@ -2,7 +2,8 @@
 @import "./variables";
 @import "./extends";
 @import "./classes";
-@import "./blocks/header";
+@import "./components/header";
+@import "./components/footer";
 
 *, *:after, *:before {
   box-sizing: border-box;

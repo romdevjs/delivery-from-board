@@ -96,3 +96,14 @@
   @extend %flex-end-end;
   flex-direction: column;
 }
+
+%flex-c-c{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%flex-c-c-column{
+  @extend %flex-c-c;
+  flex-direction: column;
+}

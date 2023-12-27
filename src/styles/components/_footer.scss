@@ -1,0 +1,65 @@
+.footer {
+  width: 100%;
+  background-color: $primaryDarkColor;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+    padding: 4rem 0;
+  }
+
+  &__logo{
+    @extend %flex-start-start-column;
+    gap: .8rem;
+  }
+
+  &__copyright{
+    @extend %flex-c-c;
+    gap: .4rem;
+    font-size: 1.2rem;
+    color: $primaryLightColor;
+  }
+
+  &__item {
+    @extend %flex-c-sb;
+  }
+
+  &__nav{
+    @extend %flex-c-c;
+    gap: 2.4rem;
+  }
+
+  &__item:nth-child(2){
+    gap: 15rem;
+  }
+
+  &__rights{
+    @extend %flex-start-start;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: $gray;
+    max-width: 1146px;
+  }
+
+  &__author{
+    @extend %flex-end-end-column;
+    gap: .4rem;
+    font-size: 1.2rem;
+    line-height: 1.3em;
+    font-weight: 300;
+    color: $gray;
+
+    a{
+      font-size: inherit;
+      line-height: inherit;
+      font-weight: inherit;
+      color: inherit;
+
+      &:focus,
+      &:hover{
+        color: $primaryPurpleColor;
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.header {
+  width: 100%;
+  background-color: $primaryLightColor;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+    padding: 2.4rem 0;
+  }
+
+  &__item {
+    @extend %flex-c-sb;
+  }
+
+  &__info {
+    @extend %flex-c-end;
+
+    &-conditions {
+      @extend %flex-end-end-column;
+      padding-right: 1.2rem;
+      border-right: 1px solid $primaryPurpleColor;
+
+      p {
+        line-height: 1.5em;
+      }
+    }
+  }
+
+  &__nav {
+    @extend %flex-c-start;
+    gap: 2.4rem;
+  }
+}
