@@ -1,4 +1,4 @@
-.page{
+.page {
   min-height: 100vh;
   width: 100%;
   @extend %flex-c-sb-column;
@@ -6,7 +6,7 @@
 
 .title {
   color: $primaryDarkColor;
-  font-size: 30rem;
+  font-size: 3rem;
   font-style: normal;
   font-weight: 900;
   line-height: 1.2em;
@@ -21,7 +21,7 @@
   font-size: 2.4rem;
   font-weight: 900;
 
-  &_light{
+  &_light {
     color: $primaryLightColor;
   }
 }
@@ -38,7 +38,7 @@
   color: $primaryDarkColor;
   transition: .3s color;
 
-  &_light{
+  &_light {
     color: $primaryLightColor;
   }
 
@@ -71,6 +71,10 @@
   padding-right: 10%;
 }
 
+.main {
+  padding: 7.2rem 0;
+}
+
 .contacts {
   @extend %flex-end-end-column;
   padding-left: 1.3rem;
@@ -87,14 +91,34 @@
     line-height: 4rem;
   }
 
-  &_light{
+  &_light {
     @extend %flex-end-end-column;
-    .contacts__number{
+
+    .contacts__number {
       color: $primaryLightColor;
     }
 
-    .contacts__free{
+    .contacts__free {
       color: $primaryLightColor;
     }
+  }
+}
+
+.input {
+  @extend %flex-c-start;
+  padding: 1.2rem;
+  gap: .4rem;
+  border-radius: .4rem;
+  border: 2px solid $primaryDarkColor;
+  color: $primaryDarkColor;
+  outline: none;
+
+  &:focus{
+    border: 2px solid $primaryPurpleColor;
+    color: $primaryPurpleColor;
+  }
+
+  &::placeholder{
+    color: $gray;
   }
 }
