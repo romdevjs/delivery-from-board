@@ -73,6 +73,15 @@
 
 .main {
   padding: 7.2rem 0;
+
+  &__wrapper{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 7.2rem;
+  }
 }
 
 .contacts {

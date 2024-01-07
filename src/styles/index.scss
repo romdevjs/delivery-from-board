@@ -4,6 +4,9 @@
 @import "./classes";
 @import "./components/header";
 @import "./components/about";
+@import "./components/advantage";
+@import "./components/guaranty";
+@import "./components/reviews";
 @import "./components/footer";
 
 *, *:after, *:before {
@@ -43,4 +46,8 @@ a, button {
   font-weight: 700;
   transition: .3s all;
   cursor: pointer;
+}
+
+ul{
+  list-style: none;
 }
