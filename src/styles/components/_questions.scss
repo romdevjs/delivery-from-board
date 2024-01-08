@@ -1,0 +1,47 @@
+.questions {
+  width: 100%;
+  background-color: $primaryLightColor;
+  padding: 6.4rem;
+
+  &__title{
+    margin-bottom: 3.2rem;
+  }
+
+  &__form {
+    max-width: 50rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr;
+    gap: 2.4rem;
+    margin: 0 auto;
+
+    .questions__form-input{
+      display: block;
+    }
+
+    .questions__form-textarea{
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+    .questions__form-btn{
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  }
+}
+
+@media screen and (max-width: $desktop){
+
+}
+
+@media screen and (max-width: $lg){
+}
+
+@media screen and (max-width: $md){
+
+}
+
+@media screen and (max-width: $sm){
+
+}

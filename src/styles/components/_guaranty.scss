@@ -1,8 +1,5 @@
 .guaranty {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  flex-direction: column;
+  @extend %flex-c-start-column;
   width: 100%;
 
   &__title {
@@ -21,4 +18,19 @@
     row-gap: 2.4rem;
     margin-bottom: 3.6rem;
   }
+}
+
+@media screen and (max-width: $desktop){
+
+}
+
+@media screen and (max-width: $lg){
+}
+
+@media screen and (max-width: $md){
+
+}
+
+@media screen and (max-width: $sm){
+
 }

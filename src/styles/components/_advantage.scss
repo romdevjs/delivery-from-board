@@ -1,9 +1,6 @@
 .advantage {
   width: 100%;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  flex-direction: column;
+  @extend %flex-c-start-column;
   gap: 2.4rem;
 
   &__list{
@@ -27,11 +24,23 @@
       }
 
       &-content{
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: column;
+        @extend %flex-c-start-column;
       }
     }
   }
+}
+
+@media screen and (max-width: $desktop){
+
+}
+
+@media screen and (max-width: $lg){
+}
+
+@media screen and (max-width: $md){
+
+}
+
+@media screen and (max-width: $sm){
+
 }

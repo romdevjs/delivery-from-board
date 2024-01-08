@@ -1,8 +1,5 @@
 .reviews {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
+  @extend %flex-c-start-column;
   gap: 3.2rem;
 
   &__btn {
@@ -11,16 +8,12 @@
   }
 
   &__slider {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @extend %flex-c-sb;
     gap: 4.7rem;
 
     &-wrapper {
       width: 127.6rem;
-      display: flex;
-      justify-content: start;
-      align-items: flex-start;
+      @extend %flex-start-start;
       gap: 2.4rem;
       overflow: hidden;
       position: relative;
@@ -29,11 +22,6 @@
     &-item {
       min-width: 62.6rem;
       height: 32rem;
-      display: flex;
-      justify-content: start;
-      align-items: flex-start;
-      flex-direction: column;
-      gap: 3rem;
       background-color: $primaryLightColor;
       border-radius: 1.6rem;
       padding: 3.2rem 4.3rem;
@@ -46,6 +34,8 @@
         font-size: 2.4rem;
         font-weight: 700;
         line-height: 1.3em;
+        max-height: 22rem;
+        overflow: hidden;
       }
 
       &-author {
@@ -53,7 +43,25 @@
         font-size: 2.4rem;
         font-weight: 300;
         line-height: 1.3em;
+        position: absolute;
+        left: 4.3rem;
+        bottom: 3.2rem;
       }
     }
   }
+}
+
+@media screen and (max-width: $desktop){
+
+}
+
+@media screen and (max-width: $lg){
+}
+
+@media screen and (max-width: $md){
+
+}
+
+@media screen and (max-width: $sm){
+
 }
