@@ -64,10 +64,68 @@
 }
 
 @media screen and (max-width: $desktop){
+  .about {
+    grid-template-columns: 1fr;
+    gap: 4rem;
 
-}
+    &__content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 1.2rem 1.6rem;
+    }
 
-@media screen and (max-width: $lg){
+    &__title {
+      display: inline-flex;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      font-size: 3rem;
+    }
+
+    &__text {
+      display: inline-flex;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+
+    &__image {
+      max-width: 505px;
+      display: inline-flex;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+
+    &__calculator {
+      padding: 2.4rem 21rem;
+
+      &-title{
+        padding: 0 10.4rem;
+      }
+
+      &-subtitle {
+        margin-bottom: 2.8rem;
+        padding: 0 10.4rem;
+      }
+
+      &-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2.4rem;
+
+        #name{
+          grid-column-start: 1;
+          grid-column-end: 3;
+        }
+
+        &-btn {
+          grid-column-start: 1;
+          grid-column-end: 3;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: $md){

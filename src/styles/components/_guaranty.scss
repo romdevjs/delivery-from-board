@@ -21,7 +21,12 @@
 }
 
 @media screen and (max-width: $desktop){
-
+  .guaranty {
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2.4rem;
+    }
+  }
 }
 
 @media screen and (max-width: $lg){

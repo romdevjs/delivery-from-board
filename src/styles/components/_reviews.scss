@@ -51,17 +51,37 @@
   }
 }
 
-@media screen and (max-width: $desktop){
+@media screen and (max-width: $desktop) {
+  .reviews {
+    &__slider {
+      gap: 3.5rem;
+
+      &-wrapper {
+        width: 81.6rem;
+      }
+
+      &-item {
+        min-width: 39.6rem;
+
+        &-text {
+          font-size: 1.8rem;
+        }
+
+        &-author {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $lg) {
+}
+
+@media screen and (max-width: $md) {
 
 }
 
-@media screen and (max-width: $lg){
-}
-
-@media screen and (max-width: $md){
-
-}
-
-@media screen and (max-width: $sm){
+@media screen and (max-width: $sm) {
 
 }
