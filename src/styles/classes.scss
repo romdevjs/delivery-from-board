@@ -170,20 +170,19 @@
       line-height: 3.2rem;
     }
   }
-
-  .main {
-    padding: 4.8rem 0;
-
-    &__wrapper {
-      gap: 4.8rem;
-    }
-  }
 }
 
 @media screen and (max-width: $md) {
+  .container {
+    padding-left: 7.9%;
+    padding-right: 7.9%;
+  }
 
-}
+  .main {
+    padding: 4rem 0;
 
-@media screen and (max-width: $sm) {
-
+    &__wrapper {
+      gap: 4rem;
+    }
+  }
 }

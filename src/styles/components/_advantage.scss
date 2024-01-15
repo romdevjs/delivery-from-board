@@ -40,13 +40,32 @@
   }
 }
 
-@media screen and (max-width: $lg){
-}
-
 @media screen and (max-width: $md){
+  .advantage {
+    &__list{
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.4rem;
 
-}
+      &-item{
+        grid-template-columns: 97px 1fr;
+        padding: 2.4rem 20%;
 
-@media screen and (max-width: $sm){
+        &-image{
+          width: 97px;
+        }
 
+        &-title{
+          width: 100%;
+          font-size: 2.4rem;
+          margin-bottom: 1.2rem;
+          text-align: left;
+        }
+
+        &-content{
+          @extend %flex-start-c-column;
+        }
+      }
+    }
+  }
 }

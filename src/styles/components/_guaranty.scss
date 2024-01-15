@@ -29,13 +29,17 @@
   }
 }
 
-@media screen and (max-width: $lg){
-}
-
 @media screen and (max-width: $md){
+  .guaranty {
+    &__text {
+      max-width: 64rem;
+    }
 
-}
-
-@media screen and (max-width: $sm){
-
+    &__list {
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 2.4rem;
+      margin-bottom: 4.8rem;
+    }
+  }
 }

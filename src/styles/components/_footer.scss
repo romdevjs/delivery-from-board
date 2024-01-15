@@ -83,18 +83,6 @@
 
 @media screen and (max-width: $lg) {
   .footer {
-    &__logo {
-      @extend %flex-start-start-column;
-      gap: .8rem;
-    }
-
-    &__copyright {
-      @extend %flex-c-c;
-      gap: .4rem;
-      font-size: 1.2rem;
-      color: $primaryLightColor;
-    }
-
     &__item {
       &:first-child{
         display: grid;
@@ -162,7 +150,57 @@
 }
 
 @media screen and (max-width: $md) {
+  .footer {
+    &__item {
+      &:first-child{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 0;
+      }
 
+      &:nth-child(2){
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+    }
+
+    &__logo{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+
+    &__contacts{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      margin-bottom: 8px;
+    }
+
+    &__nav {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      margin-bottom: 2.4rem;
+    }
+
+    &__rights {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
 }
 
 @media screen and (max-width: $sm) {

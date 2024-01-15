@@ -174,9 +174,17 @@
 }
 
 @media screen and (max-width: $md) {
+  .about {
+    &__calculator {
+      padding: 2.4rem 3.55rem;
 
-}
+      &-title {
+        padding: 0;
+      }
 
-@media screen and (max-width: $sm) {
-
+      &-subtitle {
+        padding: 0 8rem;
+      }
+    }
+  }
 }

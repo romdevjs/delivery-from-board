@@ -77,6 +77,11 @@
 
 @media screen and (max-width: $lg) {
   .reviews {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     &__slider {
       gap: 3.2rem;
 
@@ -102,9 +107,16 @@
 }
 
 @media screen and (max-width: $md) {
+  .reviews {
+    &__slider {
+      &-wrapper {
+        width: 44.2rem;
+      }
 
-}
-
-@media screen and (max-width: $sm) {
-
+      &-item {
+        min-width: 44.2rem;
+        height: 28rem;
+      }
+    }
+  }
 }
