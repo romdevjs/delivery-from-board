@@ -34,13 +34,49 @@
 }
 
 
-@media screen and (max-width: $lg){
+@media screen and (max-width: $lg) {
+  .header {
+    &__wrapper {
+      position: relative;
+      padding-bottom: 9rem;
+    }
+
+    &__info {
+
+      &-conditions {
+        height: 4.8rem;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        bottom: 2.4rem;
+        left: 0;
+        border: none;
+        font-size: 1.4rem;
+        gap: 8px;
+        padding: 0 3.2rem;
+
+        p:not(:last-child){
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          padding-right: 5rem;
+        }
+
+        p:last-child{
+          white-space: nowrap;
+        }
+      }
+    }
+  }
 }
 
-@media screen and (max-width: $md){
+@media screen and (max-width: $md) {
 
 }
 
-@media screen and (max-width: $sm){
+@media screen and (max-width: $sm) {
 
 }

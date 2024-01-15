@@ -76,6 +76,29 @@
 }
 
 @media screen and (max-width: $lg) {
+  .reviews {
+    &__slider {
+      gap: 3.2rem;
+
+      &-wrapper {
+        width: 57rem;
+      }
+
+      &-item {
+        min-width: 57rem;
+        height: 23rem;
+
+        &-text {
+          font-size: 1.8rem;
+          max-height: 12rem;
+        }
+
+        &-author {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: $md) {

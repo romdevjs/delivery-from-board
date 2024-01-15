@@ -50,7 +50,7 @@
       grid-template-columns: 1fr 1fr;
       gap: 2.4rem;
 
-      #name{
+      #name {
         grid-column-start: 1;
         grid-column-end: 3;
       }
@@ -63,7 +63,7 @@
   }
 }
 
-@media screen and (max-width: $desktop){
+@media screen and (max-width: $desktop) {
   .about {
     grid-template-columns: 1fr;
     gap: 4rem;
@@ -100,7 +100,7 @@
     &__calculator {
       padding: 2.4rem 21rem;
 
-      &-title{
+      &-title {
         padding: 0 10.4rem;
       }
 
@@ -114,7 +114,7 @@
         grid-template-columns: 1fr 1fr;
         gap: 2.4rem;
 
-        #name{
+        #name {
           grid-column-start: 1;
           grid-column-end: 3;
         }
@@ -128,10 +128,55 @@
   }
 }
 
-@media screen and (max-width: $md){
+@media screen and (max-width: $lg) {
+  .about {
+    &__content {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto 1fr;
+      width: 100%;
+    }
+
+    &__title {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+
+    &__text {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+
+    &__image {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      max-width: 100%;
+      width: 100%;
+    }
+
+    &__calculator {
+      padding: 2.4rem 10rem;
+
+      &-title {
+        padding: 0 7rem;
+      }
+
+      &-subtitle {
+        padding: 0 8rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $md) {
 
 }
 
-@media screen and (max-width: $sm){
+@media screen and (max-width: $sm) {
 
 }
