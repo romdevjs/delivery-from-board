@@ -179,10 +179,14 @@
   }
 
   .main {
-    padding: 4rem 0;
+    padding: 13rem 0 4rem;
 
     &__wrapper {
       gap: 4rem;
     }
+  }
+
+  .logo {
+    font-size: 1.8rem;
   }
 }
