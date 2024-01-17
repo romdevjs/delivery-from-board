@@ -1,6 +1,7 @@
 .reviews {
   @extend %flex-c-start-column;
   gap: 3.2rem;
+  width: 100%;
 
   &__btn {
     width: 6rem;
@@ -10,13 +11,20 @@
   &__slider {
     @extend %flex-c-sb;
     gap: 4.7rem;
+    margin: 0 auto;
+
+    &-window{
+      max-width: 90%;
+      overflow: hidden;
+    }
 
     &-wrapper {
       width: 127.6rem;
       @extend %flex-start-start;
       gap: 2.4rem;
-      overflow: hidden;
+
       position: relative;
+      transition: .3s all;
     }
 
     &-item {
